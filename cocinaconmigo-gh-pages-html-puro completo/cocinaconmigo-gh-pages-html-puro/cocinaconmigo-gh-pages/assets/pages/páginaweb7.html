@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rollitos de Calabaza a la Parrilla</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-color: #FFF7ED; /* más cálido que bg-orange-50 */
+      color: #7C2D12; /* naranja oscuro para texto principal */
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+      color: #C2410C; /* naranja fuerte */
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 20px 25px -5px rgba(244, 114, 23, 0.6),  /* naranja brillante */
+        0 10px 10px -5px rgba(194, 65, 12, 0.4);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-orange-400 shadow-lg py-8 px-6 border-b-4 border-orange-500 rounded-b-3xl">
+    <h1 class="text-5xl md:text-6xl text-center select-none drop-shadow-md">
+      🎃 Rollitos de Calabaza a la Parrilla
+    </h1>
+    <p class="text-center text-xl italic mt-2 tracking-wide max-w-xl mx-auto px-2 text-orange-900">
+      Una opción vegetal, sabrosa y creativa
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-orange-500 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>🛒</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed">
+        <li>1 calabaza (butternut o anco) cortada en láminas finas</li>
+        <li>Queso crema o ricotta</li>
+        <li>Espinaca fresca o rúcula</li>
+        <li>Aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Hierbas secas: orégano, tomillo o albahaca</li>
+        <li>Palillos de madera o brochetas (opcional)</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-orange-500 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside space-y-4 text-lg leading-relaxed">
+        <li>Corta la calabaza en láminas finas a lo largo (tipo tiras anchas) con mandolina o cuchillo bien afilado.</li>
+        <li>Unta cada tira con una capa fina de queso crema o ricotta.</li>
+        <li>Añade una hoja de espinaca o rúcula encima y condimenta con sal, pimienta y hierbas.</li>
+        <li>Enrolla con cuidado formando rollitos. Sujeta con palillos si es necesario.</li>
+        <li>Pincela cada rollito con aceite de oliva por fuera.</li>
+        <li>Llévalos a una parrilla caliente o sartén grill y cocínalos 2–3 minutos por lado, hasta que se marquen y estén tiernos.</li>
+        <li>Sirve calientes como entrada o acompañamiento. ¡Ideales para compartir!</li>
+      </ol>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-orange-500 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-lg leading-relaxed max-w-3xl">
+        Puedes rellenarlos también con queso azul, champiñones salteados o frutos secos picados. Si prefieres, cocínalos al horno por 15 minutos a 180 °C.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-orange-400 border-t border-orange-500 py-5 text-center shadow-inner">
+    <p class="text-sm font-semibold select-none text-orange-900">
+      © 2025 Cocina Vegetal Creativa
+    </p>
+  </footer>
+
+</body>
+</html>

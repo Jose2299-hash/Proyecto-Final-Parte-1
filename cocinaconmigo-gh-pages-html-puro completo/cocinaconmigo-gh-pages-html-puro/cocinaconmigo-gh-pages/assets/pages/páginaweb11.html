@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pay de Manzana con Avena y Canela</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-color: #FFFBF0; /* crema cálido */
+      color: #6B4226; /* marrón suave */
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+      color: #B45F06; /* naranja oscuro */
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 20px 25px -5px rgba(180, 95, 6, 0.4),
+        0 10px 10px -5px rgba(138, 69, 3, 0.25);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-yellow-200 shadow-lg py-8 px-6 border-b-4 border-yellow-300 rounded-b-3xl">
+    <h1 class="text-5xl md:text-6xl text-center select-none drop-shadow-md">
+      🍏 Pay de Manzana con Avena y Canela
+    </h1>
+    <p class="text-center text-xl italic mt-2 tracking-wide max-w-xl mx-auto px-2 text-yellow-800">
+      Un postre casero, saludable y aromático
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>🛒</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed text-yellow-900">
+        <li>4 manzanas medianas, peladas y cortadas en cubos</li>
+        <li>1 taza de avena en hojuelas</li>
+        <li>1/2 taza de harina de trigo</li>
+        <li>1/2 taza de azúcar morena</li>
+        <li>1 cucharadita de canela en polvo</li>
+        <li>1/4 taza de mantequilla fría</li>
+        <li>Jugo de medio limón</li>
+        <li>Una pizca de sal</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside space-y-4 text-lg leading-relaxed text-yellow-900">
+        <li>Precalienta el horno a 180 °C (350 °F).</li>
+        <li>En un bol, mezcla las manzanas con el jugo de limón, la canela y la mitad del azúcar morena. Reserva.</li>
+        <li>En otro bol, combina la avena, harina, azúcar restante, sal y mantequilla fría cortada en cubos.</li>
+        <li>Con las manos, mezcla hasta obtener una textura arenosa (como migas gruesas).</li>
+        <li>Coloca las manzanas en un molde para horno y cubre con la mezcla de avena y mantequilla.</li>
+        <li>Hornea durante 35-40 minutos o hasta que la cubierta esté dorada y crujiente.</li>
+        <li>Deja enfriar un poco antes de servir. Puedes acompañar con crema batida o helado.</li>
+      </ol>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-lg leading-relaxed max-w-3xl text-yellow-900">
+        Para un toque extra, agrega nueces picadas a la cobertura o usa azúcar mascabado. Si quieres una versión vegana, sustituye la mantequilla por aceite de coco.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-200 border-t border-yellow-300 py-5 text-center shadow-inner">
+    <p class="text-sm font-semibold select-none text-yellow-900">
+      © 2025 Postres Caseros
+    </p>
+  </footer>
+
+</body>
+</html>

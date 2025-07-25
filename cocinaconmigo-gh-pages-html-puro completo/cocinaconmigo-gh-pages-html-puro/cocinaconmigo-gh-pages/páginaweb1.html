@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fideos Sin Máquina</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <!-- Styles custom -->
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    /* Animación suave para hover */
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(234, 179, 8, 0.4), 0 10px 10px -5px rgba(202, 138, 4, 0.2);
+    }
+    /* Scroll suave para anclas si las agregas en el futuro */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head> 
+<body class="bg-yellow-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-yellow-300 shadow-lg py-8 px-6 border-b-4 border-yellow-400">
+    <h1 class="text-5xl md:text-6xl text-center text-amber-900 select-none drop-shadow-md">
+      🍜 Fideos Sin Máquina
+    </h1>
+    <p class="text-center text-xl italic text-yellow-900 mt-2 tracking-wide">
+      ¡Rápidos, fáciles y deliciosos!
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <!-- Ingredientes -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-amber-700 flex items-center gap-3 mb-6 select-none">
+        <span>🥄</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>1 taza de harina todo uso</li>
+        <li>1 huevo fresco</li>
+        <li>1 cucharada de aceite (opcional)</li>
+        <li>Una pizca de sal</li>
+        <li>Agua, según necesidad</li>
+      </ul>
+    </section>
+
+    <!-- Instrucciones -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-amber-700 flex items-center gap-3 mb-6 select-none">
+        <span>📝</span> Instrucciones
+      </h2>
+      <ol class="list-decimal list-inside text-gray-800 space-y-4 text-lg leading-relaxed">
+        <li>Coloca la harina en un bol y haz un hueco en el centro.</li>
+        <li>Agrega el huevo, la sal y el aceite. Mezcla hasta formar una masa homogénea.</li>
+        <li>Amasa durante 3 a 5 minutos hasta obtener una textura suave. Agrega agua si la masa está muy seca.</li>
+        <li>Extiende la masa con un rodillo sobre una superficie ligeramente enharinada hasta dejarla fina.</li>
+        <li>Espolvorea harina encima, enrolla la masa y corta tiras con un cuchillo afilado.</li>
+        <li>Desenrolla los fideos y cocínalos en agua hirviendo con sal durante 2-3 minutos. ¡Listo para disfrutar!</li>
+      </ol>
+    </section>
+
+    <!-- Consejos -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-amber-700 flex items-center gap-3 mb-6 select-none">
+        <span>👩‍🍳</span> Consejos
+      </h2>
+      <p class="text-gray-800 text-lg leading-relaxed max-w-3xl">
+        Puedes secar los fideos para guardarlos o cocinarlos de inmediato. Añade tus salsas favoritas 🌿🍅 o mezcla especias en la masa para darles un toque especial. ¡Disfruta cocinando con amor en casa!
+      </p>
+    </section>
+
+    <!-- Sabías qué -->
+    <section class="bg-yellow-100 p-8 rounded-3xl shadow-inner text-center transition-transform duration-300">
+      <h3 class="text-3xl font-semibold text-amber-700 mb-5 select-none">✨ ¿Sabías qué?</h3>
+      <p class="text-gray-900 max-w-xl mx-auto text-lg leading-relaxed">
+        La pasta hecha a mano tiene una textura y sabor únicos. Incluso sin máquina, puedes lograr un resultado increíble con amor y paciencia. ¡La cocina casera nunca falla!
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-300 border-t border-yellow-400 py-5 text-center shadow-inner">
+    <p class="text-sm text-yellow-900 font-semibold select-none">
+      © 2025 <strong>Recetas Rápidas</strong> | Hecho con <span class="text-red-500">❤️</span> y sabor casero
+    </p>
+  </footer>
+
+</body>
+</html>

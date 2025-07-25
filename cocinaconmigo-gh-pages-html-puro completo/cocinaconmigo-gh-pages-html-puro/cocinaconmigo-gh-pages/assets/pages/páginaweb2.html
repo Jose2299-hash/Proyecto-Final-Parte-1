@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabas de Calamar</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: linear-gradient(to bottom right, #E0F7FA, #E1F5FE);
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 18px -4px rgba(59, 130, 246, 0.3), 0 6px 8px -4px rgba(3, 169, 244, 0.2);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Encabezado -->
+  <header class="bg-gradient-to-r from-blue-200 to-cyan-200 shadow-lg py-10 px-6 border-b-4 border-cyan-300">
+    <h1 class="text-5xl md:text-6xl text-center text-blue-800 drop-shadow-lg">
+      🦑 Rabas de Calamar
+    </h1>
+    <p class="text-center text-xl italic text-blue-700 mt-2 tracking-wide">
+      Crujientes, sabrosas y perfectas para compartir junto al mar 🌊
+    </p>
+  </header>
+
+  <!-- Contenido -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <!-- Ingredientes -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-blue-400 transition-transform duration-300">
+      <h2 class="text-4xl text-blue-600 flex items-center gap-3 mb-6">
+        <span>🧂</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside space-y-2 text-lg text-gray-800 leading-relaxed">
+        <li>500 g de anillos de calamar limpios</li>
+        <li>1 taza de harina común</li>
+        <li>1/2 taza de fécula de maíz (maicena)</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Jugo de 1 limón</li>
+        <li>Aceite vegetal para freír</li>
+        <li>Opcional: pimentón o ajo en polvo</li>
+      </ul>
+    </section>
+
+    <!-- Preparación -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-cyan-400 transition-transform duration-300">
+      <h2 class="text-4xl text-cyan-700 flex items-center gap-3 mb-6">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside space-y-4 text-lg leading-relaxed text-gray-800">
+        <li>Lava bien los anillos de calamar y sécalos con papel absorbente.</li>
+        <li>Exprime el jugo de limón sobre ellos y déjalos reposar por 10 minutos.</li>
+        <li>En un bol, mezcla la harina con la maicena, sal, pimienta y condimentos opcionales.</li>
+        <li>Pasa los calamares por la mezcla de harina, asegurándote de que queden bien cubiertos.</li>
+        <li>Calienta abundante aceite en una sartén profunda a fuego medio-alto.</li>
+        <li>Fríe las rabas por tandas durante 2–3 minutos o hasta que estén doradas y crocantes.</li>
+        <li>Escúrrelas sobre papel de cocina y sirve calientes con rodajas de limón o alguna salsa.</li>
+      </ol>
+    </section>
+
+    <!-- Consejos -->
+    <section class="bg-cyan-100 p-8 rounded-3xl shadow-inner text-center transition-transform duration-300">
+      <h3 class="text-3xl font-semibold text-cyan-800 mb-4">💡 Consejos</h3>
+      <p class="text-gray-900 max-w-xl mx-auto text-lg leading-relaxed">
+        Acompaña tus rabas con mayonesa de ajo, salsa tártara o una cerveza bien fría 🍺. Si usas calamares congelados, descongélalos bien y sécalos completamente antes de rebozar.
+      </p>
+    </section>
+
+    <!-- Sabías qué -->
+    <section class="bg-blue-100 p-8 rounded-3xl shadow-inner text-center transition-transform duration-300">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-4">✨ ¿Sabías qué?</h3>
+      <p class="text-gray-900 max-w-xl mx-auto text-lg leading-relaxed">
+        Las rabas son un clásico de la cocina mediterránea y argentina, especialmente en zonas costeras. Su sabor simple y textura crocante las hace irresistibles para cualquier ocasión.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-cyan-200 to-blue-200 border-t border-blue-300 py-5 text-center shadow-inner">
+    <p class="text-sm text-blue-800 font-semibold">
+      © 2025 <strong>Recetas del Mar</strong> | Hecho con <span class="text-red-500">❤️</span> y pasión por la cocina
+    </p>
+  </footer>
+
+</body>
+</html>

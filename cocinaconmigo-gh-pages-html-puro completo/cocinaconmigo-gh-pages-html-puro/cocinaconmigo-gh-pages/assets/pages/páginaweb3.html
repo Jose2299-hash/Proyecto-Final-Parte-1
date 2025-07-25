@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ensalada César con Pollo</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 20px 25px -5px rgba(34, 197, 94, 0.4),
+        0 10px 10px -5px rgba(21, 128, 61, 0.2);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-green-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-green-300 shadow-lg py-8 px-6 border-b-4 border-green-400 rounded-b-3xl">
+    <h1 class="text-5xl md:text-6xl text-center text-green-900 select-none drop-shadow-md">
+      🥗 Ensalada César con Pollo
+    </h1>
+    <p class="text-center text-xl italic text-green-800 mt-2 tracking-wide max-w-xl mx-auto px-2">
+      Ligera, sabrosa y lista en minutos
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-green-400 transition-transform duration-300">
+      <h2 class="text-4xl text-green-700 flex items-center gap-3 mb-6 select-none">
+        <span>🛒</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>1 pechuga de pollo (a la plancha o asada)</li>
+        <li>Lechuga romana lavada y troceada</li>
+        <li>Crutones (pan tostado en cubos)</li>
+        <li>Queso parmesano rallado</li>
+        <li>Aderezo César (casero o comprado)</li>
+        <li>Aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-green-400 transition-transform duration-300">
+      <h2 class="text-4xl text-green-700 flex items-center gap-3 mb-6 select-none">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside text-gray-800 space-y-4 text-lg leading-relaxed">
+        <li>Sazona la pechuga con sal y pimienta. Cocínala a la plancha hasta que esté dorada y bien cocida. Corta en tiras finas.</li>
+        <li>Coloca la lechuga en un bol grande o plato hondo.</li>
+        <li>Agrega los crutones, el queso parmesano y las tiras de pollo.</li>
+        <li>Rocía con el aderezo César al gusto y un chorrito de aceite de oliva si deseas.</li>
+        <li>Mezcla ligeramente justo antes de servir para mantener el crujiente.</li>
+        <li>¡Disfrútala fresca y recién preparada!</li>
+      </ol>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-green-400 transition-transform duration-300">
+      <h2 class="text-4xl text-green-700 flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-gray-800 text-lg leading-relaxed max-w-3xl">
+        Puedes usar pollo empanizado para una versión más crujiente, o agregar tiras de bacon, huevo duro o tomate cherry para un extra de sabor. También puedes preparar un aderezo casero con yogur, mostaza y ajo.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-300 border-t border-green-400 py-5 text-center shadow-inner">
+    <p class="text-sm text-green-900 font-semibold select-none">
+      © 2025 Recetas Saludables | Hecho con <span class="text-red-500">💚</span> y sabor
+    </p>
+  </footer>
+
+</body>
+</html>

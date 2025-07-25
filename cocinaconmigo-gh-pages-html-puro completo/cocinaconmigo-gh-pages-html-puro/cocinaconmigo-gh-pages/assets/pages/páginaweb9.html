@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batido de Chocolate</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-color: #F3E8E0; /* color crema suave */
+      color: #4B2E05; /* marrón oscuro para texto */
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+      color: #7C3E00; /* marrón más intenso */
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 20px 25px -5px rgba(156, 85, 0, 0.5),
+        0 10px 10px -5px rgba(124, 62, 0, 0.3);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-yellow-200 shadow-lg py-8 px-6 border-b-4 border-yellow-300 rounded-b-3xl">
+    <h1 class="text-5xl md:text-6xl text-center select-none drop-shadow-md">
+      🍫 Batido de Chocolate
+    </h1>
+    <p class="text-center text-xl italic mt-2 tracking-wide max-w-xl mx-auto px-2 text-yellow-900">
+      Refrescante, cremoso y listo en minutos
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>🛒</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed text-yellow-900">
+        <li>2 tazas de leche fría</li>
+        <li>3 cucharadas de cacao en polvo o chocolate instantáneo</li>
+        <li>2 bolas de helado de chocolate o vainilla</li>
+        <li>1 cucharada de azúcar (opcional)</li>
+        <li>Hielo al gusto</li>
+        <li>Crema batida y chispas de chocolate para decorar (opcional)</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside space-y-4 text-lg leading-relaxed text-yellow-900">
+        <li>Coloca la leche, el cacao, el helado y el azúcar en una licuadora.</li>
+        <li>Añade unos cubos de hielo si deseas que quede más espeso y frío.</li>
+        <li>Licúa todo durante 30 segundos o hasta que quede bien cremoso.</li>
+        <li>Sirve en un vaso alto.</li>
+        <li>Decora con crema batida y chispas de chocolate si lo deseas. ¡Disfruta!</li>
+      </ol>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-300 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-lg leading-relaxed max-w-3xl text-yellow-900">
+        Puedes usar leche vegetal (almendra, soya, avena) para una versión sin lácteos. Agrega una cucharada de mantequilla de maní para un toque diferente.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-200 border-t border-yellow-300 py-5 text-center shadow-inner">
+    <p class="text-sm font-semibold select-none text-yellow-900">
+      © 2025 Recetas Dulces y Bebidas
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lemon Pie</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+      background-repeat: repeat;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(202, 138, 4, 0.4), 0 10px 10px -5px rgba(161, 98, 7, 0.2);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-yellow-200 shadow-lg py-8 px-6 border-b-4 border-yellow-300">
+    <h1 class="text-5xl md:text-6xl text-center text-yellow-900 select-none drop-shadow-md">
+      🍋 Lemon Pie
+    </h1>
+    <p class="text-center text-xl italic text-yellow-800 mt-2 tracking-wide">
+      Tarta de limón con base crocante y merengue dorado
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <!-- Ingredientes -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-yellow-700 flex items-center gap-3 mb-6 select-none">
+        <span>🥧</span> Ingredientes
+      </h2>
+
+      <h3 class="text-2xl font-semibold mb-4">Base:</h3>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>200 g de galletitas (tipo María o Digestive)</li>
+        <li>100 g de mantequilla derretida</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Relleno:</h3>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>1 lata de leche condensada (aprox. 400 g)</li>
+        <li>3 yemas de huevo</li>
+        <li>100 ml de jugo de limón</li>
+        <li>Ralladura de 1 limón</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-4">Merengue:</h3>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>3 claras de huevo</li>
+        <li>150 g de azúcar</li>
+        <li>1 pizca de sal o unas gotas de limón</li>
+      </ul>
+    </section>
+
+    <!-- Preparación -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-yellow-700 flex items-center gap-3 mb-6 select-none">
+        <span>📝</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside text-gray-800 space-y-4 text-lg leading-relaxed">
+        <li>Precalienta el horno a 180 °C (350 °F).</li>
+        <li>Tritura las galletitas y mézclalas con la mantequilla. Forra un molde con la mezcla y presiona bien. Hornea 10 minutos y deja enfriar.</li>
+        <li>Para el relleno, mezcla la leche condensada con las yemas, el jugo y la ralladura de limón hasta que quede cremoso.</li>
+        <li>Vierte la mezcla sobre la base y hornea 15 minutos más. Deja enfriar.</li>
+        <li>Para el merengue, bate las claras con una pizca de sal hasta que estén espumosas. Agrega el azúcar poco a poco y bate hasta formar picos firmes.</li>
+        <li>Cubre el pie con el merengue y dora con soplete o en horno fuerte (2–3 min).</li>
+        <li>Lleva a la heladera al menos 2 horas antes de servir.</li>
+      </ol>
+    </section>
+
+    <!-- Consejos -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl text-yellow-700 flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-gray-800 text-lg leading-relaxed max-w-3xl">
+        Podés hacerlo con base de masa quebrada si preferís. Agregar ralladura de lima junto al limón le da un toque más fresco. El merengue italiano se mantiene más estable si es para llevar.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-200 border-t border-yellow-300 py-5 text-center shadow-inner">
+    <p class="text-sm text-yellow-900 font-semibold select-none">
+      © 2025 Recetas Dulces de José
+    </p>
+  </footer>
+
+</body>
+</html>

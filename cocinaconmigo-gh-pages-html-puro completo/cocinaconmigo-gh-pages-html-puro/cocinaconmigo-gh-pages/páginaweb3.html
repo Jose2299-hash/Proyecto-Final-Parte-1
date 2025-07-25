@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamburguesa de Carne</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(220, 38, 38, 0.4), 0 10px 10px -5px rgba(185, 28, 28, 0.2);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-red-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-red-300 shadow-lg py-8 px-6 border-b-4 border-red-400">
+    <h1 class="text-5xl md:text-6xl text-center text-red-900 select-none drop-shadow-md">
+      🍔 Hamburguesa de Carne
+    </h1>
+    <p class="text-center text-xl italic text-red-800 mt-2 tracking-wide">
+      Jugosa, casera y lista en minutos
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <!-- Ingredientes -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-red-400 transition-transform duration-300">
+      <h2 class="text-4xl text-red-700 flex items-center gap-3 mb-6 select-none">
+        <span>🍔</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside text-gray-800 space-y-3 text-lg leading-relaxed">
+        <li>250 g de carne molida de res</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>1 diente de ajo picado (opcional)</li>
+        <li>1 pan para hamburguesa</li>
+        <li>1 hoja de lechuga</li>
+        <li>1 rodaja de tomate</li>
+        <li>1 rodaja de cebolla</li>
+        <li>1 rebanada de queso (opcional)</li>
+        <li>Salsas al gusto (mayonesa, kétchup, mostaza)</li>
+        <li>Aceite o mantequilla para cocinar</li>
+      </ul>
+    </section>
+
+    <!-- Preparación -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-red-400 transition-transform duration-300">
+      <h2 class="text-4xl text-red-700 flex items-center gap-3 mb-6 select-none">
+        <span>📝</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside text-gray-800 space-y-4 text-lg leading-relaxed">
+        <li>En un bol, mezcla la carne con sal, pimienta y ajo. Forma una bola y aplástala en forma de hamburguesa.</li>
+        <li>Calienta una sartén con un poco de aceite y cocina la carne por 3–5 minutos por lado o hasta el punto deseado.</li>
+        <li>En los últimos 30 segundos, coloca el queso encima para que se derrita.</li>
+        <li>Abre el pan y tuéstalo ligeramente si deseas.</li>
+        <li>Arma tu hamburguesa: pan, lechuga, carne, tomate, cebolla, salsas y cierra con la otra mitad del pan.</li>
+        <li>¡Sirve caliente con papas o ensalada!</li>
+      </ol>
+    </section>
+
+    <!-- Tips -->
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-red-400 transition-transform duration-300">
+      <h2 class="text-4xl text-red-700 flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Tips
+      </h2>
+      <p class="text-gray-800 text-lg leading-relaxed max-w-3xl">
+        Puedes añadir pepinillos, panceta, huevo frito o lo que prefieras para personalizar tu hamburguesa. 🧀🥓🍳
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-red-300 border-t border-red-400 py-5 text-center shadow-inner">
+    <p class="text-sm text-red-900 font-semibold select-none">
+      © 2025 Recetas Urbanas | Hecho con <span class="text-red-500">❤️</span> y sabor casero
+    </p>
+  </footer>
+
+</body>
+</html>

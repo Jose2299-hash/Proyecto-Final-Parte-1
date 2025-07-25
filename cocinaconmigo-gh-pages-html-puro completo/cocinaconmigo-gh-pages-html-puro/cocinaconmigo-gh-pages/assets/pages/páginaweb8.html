@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tapas de Atún y Queso</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-color: #FEF3C7; /* amarillo suave */
+      color: #92400E; /* amarillo oscuro para texto */
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+      color: #B45309; /* amarillo intenso */
+    }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        0 20px 25px -5px rgba(202, 138, 4, 0.5),
+        0 10px 10px -5px rgba(146, 64, 14, 0.3);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-yellow-50 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-yellow-300 shadow-lg py-8 px-6 border-b-4 border-yellow-400 rounded-b-3xl">
+    <h1 class="text-5xl md:text-6xl text-center select-none drop-shadow-md">
+      🥖 Tapas de Atún y Queso
+    </h1>
+    <p class="text-center text-xl italic mt-2 tracking-wide max-w-xl mx-auto px-2 text-yellow-900">
+      Fáciles, sabrosas y listas en minutos
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-14">
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>🛒</span> Ingredientes
+      </h2>
+      <ul class="list-disc list-inside space-y-3 text-lg leading-relaxed text-yellow-900">
+        <li>1 lata de atún en aceite o agua (escurrido)</li>
+        <li>100 g de queso crema o queso rallado</li>
+        <li>Rebanadas de pan (baguette o pan rústico)</li>
+        <li>Aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Perejil picado o aceitunas para decorar (opcional)</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>👨‍🍳</span> Preparación
+      </h2>
+      <ol class="list-decimal list-inside space-y-4 text-lg leading-relaxed text-yellow-900">
+        <li>Precalienta el horno a 180 °C (opcional, si deseas pan crujiente).</li>
+        <li>Tuesta ligeramente las rebanadas de pan con un chorrito de aceite de oliva.</li>
+        <li>En un bol, mezcla el atún con queso crema, sal y pimienta. Aplasta con tenedor hasta formar una pasta.</li>
+        <li>Unta la mezcla sobre las rebanadas de pan.</li>
+        <li>Decora con perejil, aceitunas en rodajas o un poco más de queso rallado.</li>
+        <li>Sirve inmediatamente como entrada o bocadito. ¡Perfectas para compartir!</li>
+      </ol>
+    </section>
+
+    <section class="bg-white p-8 rounded-3xl shadow-md border-l-8 border-yellow-400 transition-transform duration-300">
+      <h2 class="text-4xl flex items-center gap-3 mb-6 select-none">
+        <span>💡</span> Consejos
+      </h2>
+      <p class="text-lg leading-relaxed max-w-3xl text-yellow-900">
+        Puedes sustituir el queso crema por ricotta, mayonesa o incluso palta triturada. También quedan deliciosas con tomate seco o un toque de pimentón dulce.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-300 border-t border-yellow-400 py-5 text-center shadow-inner">
+    <p class="text-sm font-semibold select-none text-yellow-900">
+      © 2025 Tapas Rápidas de José
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador de Recetas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-tr from-yellow-50 via-orange-100 to-red-50 min-h-screen text-gray-800 px-4 py-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-extrabold text-center mb-6 text-rose-600">🍽️ Buscador de Recetas</h1>
+
+    <div class="flex flex-col sm:flex-row items-center gap-2 mb-6">
+      <input id="searchInput" type="text" placeholder="Buscar por nombre o ingrediente..."
+        class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-rose-400 outline-none shadow" />
+      <button id="searchBtn"
+        class="px-4 py-2 bg-rose-500 hover:bg-rose-600 text-white rounded shadow font-semibold transition">Buscar</button>
+      <button id="randomBtn"
+        class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded shadow font-semibold transition">Aleatoria</button>
+    </div>
+
+    <div id="results" class="space-y-4"></div>
+
+    <div id="instrucciones" class="mt-8 hidden bg-white rounded-lg shadow-lg p-6">
+      <h2 class="text-2xl font-bold text-rose-600 mb-4">Instrucciones y Detalles</h2>
+      <div id="detalle-instrucciones" class="space-y-2 text-gray-700"></div>
+      <button id="cerrar-instrucciones"
+        class="mt-6 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded shadow">Cerrar</button>
+    </div>
+  </div>
+
+  <script>
+    const apiKey = 'a6d5512395f145688ef0774ed4dbb827';
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const randomBtn = document.getElementById('randomBtn');
+    const resultsDiv = document.getElementById('results');
+    const instruccionesDiv = document.getElementById('instrucciones');
+    const detalleInstruccionesDiv = document.getElementById('detalle-instrucciones');
+    const cerrarInstruccionesBtn = document.getElementById('cerrar-instrucciones');
+
+    function crearRecetaHTML(receta) {
+      const div = document.createElement('div');
+      div.className = 'flex bg-white rounded-lg shadow-md hover:shadow-lg transition p-4 gap-4 cursor-pointer';
+
+      div.innerHTML = `
+        <img src="${receta.image}" alt="${receta.title}" class="w-28 h-28 object-cover rounded-lg" />
+        <div class="flex flex-col justify-between">
+          <h3 class="text-xl font-semibold text-rose-600 mb-1">${receta.title}</h3>
+          <p class="text-sm text-gray-600">ID Receta: <span class="font-medium">${receta.id}</span></p>
+          <a href="https://spoonacular.com/recipes/${encodeURIComponent(receta.title.toLowerCase().replace(/\s+/g, '-'))}-${receta.id}" 
+             target="_blank" class="text-blue-500 hover:underline text-sm">🌐 Ver receta web</a>
+        </div>
+      `;
+
+      div.addEventListener('click', () => {
+        cargarInstrucciones(receta.id);
+      });
+
+      return div;
+    }
+
+    async function buscarRecetas() {
+      const query = searchInput.value.trim();
+      if (!query) {
+        alert('Por favor escribe algo para buscar.');
+        return;
+      }
+      resultsDiv.innerHTML = '<p class="text-center text-gray-500">🔍 Cargando resultados...</p>';
+      instruccionesDiv.classList.add('hidden');
+
+      try {
+        const url = `https://api.spoonacular.com/recipes/complexSearch?query=${encodeURIComponent(query)}&number=10&apiKey=${apiKey}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (!data.results || data.results.length === 0) {
+          resultsDiv.innerHTML = '<p class="text-center text-red-500">No se encontraron recetas.</p>';
+          return;
+        }
+
+        resultsDiv.innerHTML = '';
+        data.results.forEach(r => {
+          const recetaHTML = crearRecetaHTML(r);
+          resultsDiv.appendChild(recetaHTML);
+        });
+      } catch (error) {
+        resultsDiv.innerHTML = '<p class="text-center text-red-500">❌ Error al buscar recetas.</p>';
+        console.error(error);
+      }
+    }
+
+    async function recetaAleatoria() {
+      resultsDiv.innerHTML = '<p class="text-center text-gray-500">🎲 Cargando receta aleatoria...</p>';
+      instruccionesDiv.classList.add('hidden');
+
+      try {
+        const url = `https://api.spoonacular.com/recipes/random?number=1&apiKey=${apiKey}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (!data.recipes || data.recipes.length === 0) {
+          resultsDiv.innerHTML = '<p class="text-center text-red-500">No se encontró receta aleatoria.</p>';
+          return;
+        }
+
+        resultsDiv.innerHTML = '';
+        const recetaHTML = crearRecetaHTML(data.recipes[0]);
+        resultsDiv.appendChild(recetaHTML);
+      } catch (error) {
+        resultsDiv.innerHTML = '<p class="text-center text-red-500">❌ Error al obtener receta aleatoria.</p>';
+        console.error(error);
+      }
+    }
+
+    async function cargarInstrucciones(id) {
+      detalleInstruccionesDiv.innerHTML = '<p class="text-gray-500">⏳ Cargando instrucciones...</p>';
+      instruccionesDiv.classList.remove('hidden');
+
+      try {
+        const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}&includeNutrition=false`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        if (!data) {
+          detalleInstruccionesDiv.innerHTML = '<p class="text-red-500">❌ No se recibió información de la receta.</p>';
+          return;
+        }
+
+        let html = `<h3 class="text-xl font-bold text-rose-600">${data.title}</h3>`;
+
+        if (data.extendedIngredients && data.extendedIngredients.length > 0) {
+          html += `<h4 class="mt-4 font-semibold">Ingredientes:</h4><ul class="list-disc list-inside">`;
+          data.extendedIngredients.forEach(ing => {
+            html += `<li>${ing.original}</li>`;
+          });
+          html += `</ul>`;
+        }
+
+        if (data.instructions && data.instructions.trim() !== '') {
+          html += `<h4 class="mt-4 font-semibold">Instrucciones:</h4><div class="prose">${data.instructions}</div>`;
+        } else {
+          html += `<p class="text-gray-600"><em>No hay instrucciones disponibles.</em></p>`;
+        }
+
+        detalleInstruccionesDiv.innerHTML = html;
+      } catch (error) {
+        detalleInstruccionesDiv.innerHTML = '<p class="text-red-500">❌ Error al cargar instrucciones.</p>';
+        console.error(error);
+      }
+    }
+
+    cerrarInstruccionesBtn.addEventListener('click', () => {
+      instruccionesDiv.classList.add('hidden');
+    });
+
+    searchBtn.addEventListener('click', buscarRecetas);
+    randomBtn.addEventListener('click', recetaAleatoria);
+
+    recetaAleatoria();
+  </script>
+</body>
+</html>

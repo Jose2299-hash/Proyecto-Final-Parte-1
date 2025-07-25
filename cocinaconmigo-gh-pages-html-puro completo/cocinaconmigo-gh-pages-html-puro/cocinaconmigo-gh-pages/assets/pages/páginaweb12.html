@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empanadas Tucumanas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fff5f5; /* rosa suave */
+      color: #4a3c2f; /* marrón oscuro */
+    }
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+      color: #dc2626; /* rojo intenso */
+      user-select: none;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    main > section {
+      background: white;
+      border-left: 6px solid #ef4444; /* rojo fuerte */
+      padding: 2rem 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px -8px rgba(239, 68, 68, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    main > section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -10px rgba(239, 68, 68, 0.7);
+    }
+    footer {
+      color: #b91c1c;
+      font-weight: 600;
+      user-select: none;
+      padding: 1rem 0;
+      border-top: 2px solid #ef4444;
+      text-align: center;
+      background: #fff1f1;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <header class="bg-red-300 shadow-lg py-8 px-6 rounded-b-3xl border-b-4 border-red-400">
+    <h1 class="text-4xl md:text-5xl text-center select-none drop-shadow-sm">
+      🥟 Empanadas Tucumanas
+    </h1>
+    <p class="text-center text-lg md:text-xl italic mt-2 tracking-wide max-w-xl mx-auto px-4 text-red-700">
+      La versión argentina con carne jugosa y sabor tradicional
+    </p>
+  </header>
+
+  <main class="flex-grow max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 py-12 space-y-12">
+
+    <section>
+      <h2 class="text-3xl mb-6 flex items-center gap-3 select-none">🛒 Ingredientes (para 12 empanadas)</h2>
+      <ul class="list-disc list-inside text-lg space-y-3 leading-relaxed">
+        <li>500 g de carne vacuna (nalga o cuadril) picada a cuchillo</li>
+        <li>2 cebollas grandes</li>
+        <li>1 cebolla de verdeo</li>
+        <li>2 huevos duros picados</li>
+        <li>1 cucharadita de pimentón dulce</li>
+        <li>1 cucharadita de comino</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>12 tapas para empanadas (caseras o compradas)</li>
+        <li>Grasa de vaca o aceite para cocinar</li>
+        <li>Opcional: ají molido o papa cocida en cubos</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-3xl mb-6 flex items-center gap-3 select-none">👩‍🍳 Preparación</h2>
+      <ol class="list-decimal list-inside text-lg space-y-4 leading-relaxed">
+        <li>En una sartén grande, calienta grasa o aceite y salteá las cebollas picadas hasta que estén doradas.</li>
+        <li>Agrega la carne picada, condimenta con sal, pimienta, comino y pimentón. Cocina sin que se seque demasiado.</li>
+        <li>Agrega la cebolla de verdeo picada y mezcla. Retira del fuego y deja enfriar.</li>
+        <li>Una vez frío, incorpora el huevo duro picado (y papa si usás).</li>
+        <li>Rellena cada tapa de empanada con una cucharada de la mezcla.</li>
+        <li>Ciérralas haciendo el clásico repulgue o presionando con un tenedor.</li>
+        <li>Podés freírlas en abundante grasa caliente o cocinarlas al horno bien caliente hasta que estén doradas.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="text-3xl mb-6 flex items-center gap-3 select-none">💡 Consejos</h2>
+      <p class="text-lg leading-relaxed max-w-3xl">
+        El secreto está en que el relleno sea bien jugoso. Algunas familias tucumanas agregan caldo frío al relleno o lo enfrían un día antes. Servilas con limón o ají casero.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Cocina Regional Argentina
+  </footer>
+
+</body>
+</html>
