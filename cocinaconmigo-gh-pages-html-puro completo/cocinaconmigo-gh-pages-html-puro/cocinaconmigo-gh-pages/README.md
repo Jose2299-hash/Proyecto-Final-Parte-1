@@ -11,4 +11,4 @@ Creator: [José De Gracia](https://github.com/IgnacioPrados)
 - JavaScript
 - JQuery
 
-> © 2021 Made by IgnacioPrados
+> © 2025 Hecho Por José De Gracia
