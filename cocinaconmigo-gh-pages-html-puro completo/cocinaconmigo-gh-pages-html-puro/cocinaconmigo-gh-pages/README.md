@@ -2,8 +2,7 @@
 
 Página Web de Recetas de Comida
 
-Creator: [José De Gracia][(https://github.com/Jose2299-hash/Proyecto-Final-Parte-1.git)]
-
+Creator: [José De Gracia](https://github.com/Jose2299-hash/Proyecto-Final-Parte-1.git)
 
 ## Tecnologías Usadas
 - HTML5
